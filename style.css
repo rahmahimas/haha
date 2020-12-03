@@ -1,365 +1,230 @@
 body {
-  font-family: "Montserrat";
-  text-align: center;
+	margin: 0;
+	background-image: linear-gradient(90deg, #5429d6, #2a3cfa);
+	color: #fff;
+	font-family: sans-serif;
+	align-items: center;
+	min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat-Bold";
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 50px;
 }
 
-p {
-  color: #8f8f8f;
+.yuhuu{
+  display: flex;
 }
-
-/* Headings */
-
-.big-heading {
-  font-family: "Montserrat-Black";
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.big-heading2 {
-  font-family: "Montserrat-Black";
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-.section-heading {
-  font-family: "Comfortaa";
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-/* Containers */
-
-.container-fluid{
-  padding: 7% 15%;
-}
-
-/* Sections */
-
-.colored-section {
-  background-color: #8675a9;
-}
-
-.white-section {
-  background-color: #fff;
-}
-
-/* Navigation Bar */
-
-.navbar {
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
-  font-family: "Chela One";
-  font-size: 4rem;
-  font-weight: medium;
-  color: #0e9aa7;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-Light";
-}
-
-/* Buttons */
-
-.download-button {
-  margin: 5% 3% 5% 0;
-}
-
-/* Title Section */
-
-#title {
-  background-color: #f96d80;
-  color: #fff;
-  text-align: left;
-}
-
-#title .container-fluid {
-  padding: 3% 15% 7%;
-}
-
-/* Title Image */
-
-.title-image {
-  width: 120%;
-  position: absolute;
-}
-
-/* Features Section */
-
-.feature-title{
-  font-family: "Arima Madurai";
-  font-size: 2rem;
-  text-align: center;
-}
-
-.feature-txt{
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: right;
-}
-
-.feature3-img{
-  width: 25%;
-  position: absolute;
-  left: 300px;
-}
-
-.feature2-txt{
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: left;
-}
-
-#features {
-  position: relative;
-}
-
-.feature-title {
-  font-size: 1.5rem;
-}
-
-.feature-box {
-  padding: 4.5%;
-}
-
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #ff4c68;
-}
-
-/* Testimonial Section */
-
-#testimonials {
-  background-color: #8675a9;
-}
-
-.testimonial-title, .big-heading {
-  font-family: Yeseva One;
-  font-size: 3rem;
-  line-height: 1.5;
-  margin: 50px;
-}
-
-.testimonial-text {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  font-family: Changa One;
-}
-
-.testimonial-text2, .normal-price {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  margin: 20px;
-  color: #821752;
-  font-family: Neucha;
-}
-
-.promo-price{
-  font-size: 3rem;
-}
-
-.normal-price, .promo-price{
-  text-align: left;
-  font-family: Crete Round;
-}
-
-.hardcover-image {
-  width: 40%;
-  float: left;
-  position: relative;
-  margin: 0px 100px;
-}
-
-.softcover-image {
-  width: 40%;
-  float: left;
-  position: relative;
-  margin: 54px;
-}
-
-#press {
-  background-color: #8675a9;
-  padding-bottom: 5%;
-  padding-top: 10%;
-}
-
-.press-logo {
-  color: #b5076b;
-  text-align: center;
-  font-family: "Pacifico";
-  font-size: 5rem;
-  font-weight: medium;
-  padding-bottom: 5%;
-}
-
-.nama-maba-p{
-  color: #b5076b;
-  text-align: center;
-  font-family: "Waiting for the Sunrise";
-  font-size: 3rem;
-  padding-top: 5%;
-  font-weight: bold;
-}
-
-/* Pricing Section */
-
-#pricing {
-  padding: 100px;
-}
-
-.pricing-column {
-  padding: 3% 2%;
-}
-
-.skill-row-left-title {
-  width: 75%;
-  left: 100px;
-  margin: 50px;
-  text-align: left;
-}
-
-.skill-row-left {
+.slider {
   width: 100%;
-  left: 100px;
-  margin: 50px;
-  text-align: left;
 }
 
-.skill-row-right {
-  width: 100%;
-  right: 100px;
-  margin: 50px 0px;
-  text-align: right;
+.slider input {
+	display: none;
 }
 
-.sell-txt{
-  font-size: 2rem;
-  line-height: 1.5;
+.testimonials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 350px;
+	perspective: 1000px;
+	overflow: hidden;
 }
 
-.selling-txt{
-  font-size: 1.5rem;
-  line-height: 1.5;
+.testimonials .item {
+	top: 0;
+	position: absolute;
+	box-sizing: border-box;
+	background-color: #0A0220;
+	padding: 30px;
+	width: 450px;
+	text-align: center;
+	transition: transform 0.4s;
+	-webkit-transform-style: preserve-3d;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
+	cursor: pointer;
 }
 
-.pricing-title{
-  font-family: "Arima Madurai";
+.testimonials .item img {
+	width: 150px;
+	border-radius: 50%;
+	border: 9px solid #3B344D;
+}
+.testimonials .item p {
+	color: #ddd;
 }
 
-.pancake-img, .pearl-img, .tea-img, .feature1-img {
-  width: 35%;
-  float: left;
-  margin-right: 30px;
+.testimonials .item h2 {
+	font-size: 14px;
 }
 
-.cake-img, .coffee-img, .feature2-img{
-  width: 40%;
-  right: 100px;
-  float: right;
-  margin-left: 0px;
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.coffee-img{
-  width: 25%;
-}
-/* CTA Section */
-
-.big-heading{
-  color: white;
-}
-
-/* Footer Section */
-
-.contact-link {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  margin: 50px;
-  border-radius: 8px;
-  font-family: 'Karma', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+.dots label {
+	display: block;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #413B52;
+	margin: 7px;
+	transition: transform 0.2s, color 0.2s;
 }
 
-.contact-link:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
+/* First */
+#t-1:checked ~ .dots label[for="t-1"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-1:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-1:checked ~ .testimonials label[for="t-1"] {
+	z-index: 4;
+}
+#t-1:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 3;
+}
+#t-1:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 2;
+}
+#t-1:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+	z-index: 1;
+}
+#t-1:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(1200px) translateZ(-360px) rotateY(-45deg);
 }
 
-.social-icon {
-  margin: 20px 10px;
+/* Second */
+#t-2:checked ~ .dots label[for="t-1"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .dots label[for="t-2"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-2:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-2:checked ~ .testimonials label[for="t-2"] {
+	z-index: 3;
+}
+#t-2:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-2:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 1;
+}
+#t-2:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
 }
 
-@media (max-width: 1028px) {
-
-  #title {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
+/* Third */
+#t-3:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .dots label[for="t-3"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-3:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-3:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-3:checked ~ .testimonials label[for="t-3"] {
+	z-index: 3;
+}
+#t-3:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-3:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
 }
 
-.greeting{
-  text-align: center;
+/* Fourth */
+#t-4:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .dots label[for="t-4"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-4:checked ~ .dots label[for="t-5"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+}
+#t-4:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-4:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 2;
+}
+#t-4:checked ~ .testimonials label[for="t-4"] {
+	z-index: 3;
+}
+#t-4:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
 }
 
-.foto-maba-img{
-  width: 30%;
+/* Fifth */
+#t-5:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-5:checked ~ .dots label[for="t-5"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-5:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#t-5:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+	z-index: 1;
+}
+#t-5:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+	z-index: 2;
+}
+#t-5:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-5:checked ~ .testimonials label[for="t-5"] {
+	z-index: 4;
 }
 
-.regard{
-  font-size: 2rem;
-  line-height: 1.5;
-  font-family: "Bad Script";
-  color: #132743;
-  font-weight: bold;
-  padding-top: 10%;
-}
-
-.regard2{
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-family: "Bad Script";
-  color: #132743;
-  font-weight: bold;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
-
-.gif-1{
-  width: 30%;
-}
-
-.gif-2{
-  width: 20%;
-  padding-bottom: 10%;
+.footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 50px;
+  margin-top: 20px;
 }
