@@ -1,8 +1,8 @@
 body {
 	margin: 0;
-	background-image: linear-gradient(90deg, #5429d6, #2a3cfa);
+	background-image: linear-gradient(80deg, #5429d6, #2a3cfa, #34a4eb);
 	color: #fff;
-	font-family: sans-serif;
+  font-family: 'Yeon Sung', cursive;
 	align-items: center;
 	min-height: 100vh;
 }
@@ -12,10 +12,12 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	min-height: 50px;
+	min-height: 250px;
+  font-style: italic;
+  font-size: 200%;
 }
 
-.yuhuu{
+.slider-wrap{
   display: flex;
 }
 .slider {
@@ -57,7 +59,10 @@ body {
 	border: 9px solid #3B344D;
 }
 .testimonials .item p {
-	color: #ddd;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 110%;
+	color: #ffffff;
+  line-height: 130%;
 }
 
 .testimonials .item h2 {
@@ -220,11 +225,65 @@ body {
 	z-index: 4;
 }
 
+.coupon {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 50px;
+  margin-top: 140px;
+}
+
+.coupon img{
+  width: 35%;
+}
+
+.download {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 50px;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.bye{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 50px;
+  margin-top: 30px;
+}
+
+.bye h2{
+  text-align: center;
+}
+
 .footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	min-height: 50px;
-  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.footer p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 120%;
+  line-height: 130%;
+  text-align: center;
 }
