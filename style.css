@@ -240,10 +240,10 @@ body {
 
 .download {
   display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 50px;
   margin-top: 30px;
 }
 
