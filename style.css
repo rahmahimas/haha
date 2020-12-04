@@ -254,6 +254,7 @@ body {
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 18px;
 }
 
 .btn:hover {
